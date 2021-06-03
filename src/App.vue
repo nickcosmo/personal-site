@@ -10,16 +10,24 @@
           style="
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: space-around;
             list-style-type: none;
             margin: 0px;
             padding: 0px;
           "
         >
-          <li>LinkedIn</li>
-          <li>Email</li>
-          <li>Github</li>
-          <li>codepen</li>
+          <li>
+            <button><img src="../public/linkedin.png" /></button>
+          </li>
+          <li>
+            <button><img src="../public/email.png" /></button>
+          </li>
+          <li>
+            <button><img src="../public/github.png" /></button>
+          </li>
+          <li>
+            <button><img src="../public/codepen.png" /></button>
+          </li>
         </ul>
       </app-block>
       <app-block height="50%">My Skills are ...</app-block>
@@ -45,6 +53,7 @@
 
 <script>
 import AppBlock from "./components/AppBlock";
+
 export default {
   components: { AppBlock },
   data() {
