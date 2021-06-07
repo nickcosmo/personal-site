@@ -1,5 +1,7 @@
 # portfolio-site
 
+My portfolio site is coming soon... !
+
 ## Project setup
 ```
 npm install
