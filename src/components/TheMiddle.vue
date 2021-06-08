@@ -39,7 +39,7 @@
           style="text-align: left; border-right: 1px solid black"
         >
           <p
-            style="font-size: 2em; font-family: var(--body-font); padding: 10px"
+            style="font-size: 2em; font-family: var(--body-font); padding: 25px"
           >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
             quo distinctio, quas accusamus modi labore aliquid laudantium soluta
@@ -109,7 +109,7 @@ export default {
   width: 45%;
   display: flex;
   flex-direction: column;
-  padding: 100px 8px;
+  padding: 75px 8px;
 }
 
 /*  */

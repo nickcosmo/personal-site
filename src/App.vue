@@ -4,24 +4,17 @@
 
     <TheMiddle />
 
-    <div id="right">
-      <app-block style="margin-bottom: 8px" height="40%">
-        This is what i am listening to ...
-      </app-block>
-      <app-block style="margin-top: 8px" height="60%">
-        Contact info stuff
-      </app-block>
-    </div>
+    <TheRight />
   </div>
 </template>
 
 <script>
-import AppBlock from "./components/AppBlock";
 import TheMiddle from "./components/TheMiddle";
 import TheLeft from "./components/TheLeft";
+import TheRight from "./components/TheRight";
 
 export default {
-  components: { AppBlock, TheMiddle, TheLeft },
+  components: { TheMiddle, TheLeft, TheRight },
 };
 </script>
 
@@ -29,6 +22,10 @@ export default {
 :root {
   --header-font: "Roboto Mono", monospace;
   --body-font: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #faf9f6;
 }
 
 #main {
@@ -42,6 +39,6 @@ export default {
   width: 25%;
   display: flex;
   flex-direction: column;
-  padding: 100px 8px;
+  padding: 75px 8px;
 }
 </style>
