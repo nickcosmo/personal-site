@@ -37,6 +37,7 @@
         <app-chip>VueJS</app-chip>
         <app-chip>NodeJS</app-chip>
         <app-chip>Express</app-chip>
+        <app-chip>Mongo DB</app-chip>
       </div>
     </div>
     <div class="divider"></div>
@@ -91,23 +92,23 @@ h4,
 p {
   text-align: left;
   padding-left: 15px;
+}
+
+h4 {
   font-family: var(--header-font);
 }
 
+p {
+  font-family: var(--body-font);
+}
+
 img {
-  height: 200px;
-  width: auto;
+  width: 80%;
+  height: auto;
 }
 
 .project {
   padding: 10px 30px;
-}
-
-.divider {
-  display: inline-block;
-  width: 90%;
-  height: 0.75px;
-  background-color: black;
 }
 
 .chipArea {

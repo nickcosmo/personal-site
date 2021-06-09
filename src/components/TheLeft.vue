@@ -1,12 +1,8 @@
 <template>
   <div id="left">
-    <app-block height="40%">
+    <app-block class="block-top">
       <div class="section">
-        <h1
-          style="font-size: 8rem; margin: 0px; font-family: var(--header-font)"
-        >
-          Hi
-        </h1>
+        <h1>Hi</h1>
         <h2
           style="font-size: 3rem; margin: 0px; font-family: var(--header-font)"
         >
@@ -14,7 +10,7 @@
         </h2>
       </div>
     </app-block>
-    <app-block style="margin: 16px 0px" height="10%">
+    <app-block class="block-middle">
       <div class="section">
         <ul>
           <li>
@@ -54,7 +50,9 @@
         </ul>
       </div>
     </app-block>
-    <TechSection />
+    <app-block class="block-bottom">
+      <TechSection />
+    </app-block>
   </div>
 </template>
 
@@ -73,12 +71,11 @@ export default {
 </script>
 
 <style scoped>
-#left {
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 75px 8px;
+h1 {
+  line-height: 1;
+  font-size: 7.478rem;
+  margin: 0px;
+  font-family: var(--header-font);
 }
 
 ul {
@@ -107,6 +104,8 @@ button:hover {
 
 h3 {
   font-family: var(--header-font);
+  margin: 0px;
+  /* font-size: 1.777rem; */
 }
 
 .section {
@@ -115,5 +114,32 @@ h3 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.block-top {
+  height: 40%;
+}
+
+.block-middle {
+  margin: 16px 0px;
+  height: 10%;
+}
+
+.block-bottom {
+  height: 50%;
+}
+
+@media (max-width: 750px) {
+  .block-bottom {
+    display: none;
+  }
+
+  .block-top {
+    height: 200px;
+  }
+
+  .block-middle {
+    height: 60px;
+  }
 }
 </style>

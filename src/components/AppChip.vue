@@ -12,6 +12,7 @@ div {
   border-radius: 30px;
   background-color: rgb(255, 255, 255);
   font-family: var(--header-font);
+  font-size: 0.8rem;
   margin: 0 5px;
 }
 </style>

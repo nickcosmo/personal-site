@@ -28,6 +28,13 @@ body {
   background-color: #faf9f6;
 }
 
+.divider {
+  display: inline-block;
+  width: 90%;
+  height: 0.75px;
+  background-color: black;
+}
+
 #main {
   display: flex;
   max-width: 1150px;
@@ -35,10 +42,52 @@ body {
   margin: auto;
 }
 
-#right {
-  width: 25%;
+#left,
+#right,
+#middle {
   display: flex;
   flex-direction: column;
-  padding: 75px 8px;
+  padding: 5% 8px;
+}
+
+#left {
+  width: 30%;
+  justify-content: space-between;
+}
+
+#middle {
+  width: 45%;
+}
+
+#right {
+  width: 25%;
+}
+
+@media screen and (max-height: 750px) {
+  #right,
+  #left,
+  #middle {
+    padding: 1% 8px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #main {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  #right,
+  #left,
+  #middle {
+    width: 90%;
+    padding: 0;
+    /* max-height: 700px; */
+  }
+
+  #left {
+    margin-top: 15px;
+  }
 }
 </style>

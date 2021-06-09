@@ -1,14 +1,9 @@
 <template>
-  <div class="app-block" :style="{ height: height }">
+  <div class="app-block">
     <slot></slot>
   </div>
 </template>
 
-<script>
-export default {
-  props: ["height"],
-};
-</script>
 
 <style scoped>
 .app-block {

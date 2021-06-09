@@ -1,21 +1,13 @@
 <template>
   <div id="middle">
-    <app-block
-      style="margin-bottom: 8px; display: flex; justify-content: center"
-      height="10%"
-    >
-      <h3
-        style="
-          font-family: var(--header-font);
-          font-size: 2em;
-          vertical-align: middle;
-          line-height: normal;
-        "
-      >
-        I am a <span class="description">{{ description }}</span>
-      </h3>
+    <app-block class="block-top">
+      <div class="container-top">
+        <h3>
+          I am a <span class="description">{{ description }}</span>
+        </h3>
+      </div>
     </app-block>
-    <app-block class="section_about" height="90%">
+    <app-block class="section_about">
       <header class="section_about_header">
         <div
           @click="moveSection('about')"
@@ -105,17 +97,25 @@ export default {
 </script>
 
 <style scoped>
-#middle {
-  width: 45%;
+.container-top {
   display: flex;
-  flex-direction: column;
-  padding: 75px 8px;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
-/*  */
+h3 {
+  font-family: var(--header-font);
+  font-size: 2rem;
+  vertical-align: middle;
+  line-height: 1;
+  margin: 0;
+}
 
 .section_about {
-  margin-top: 8px;
+  margin-top: 1rem;
+  height: 90%;
 }
 
 .section_about_header {
@@ -128,7 +128,7 @@ export default {
   border-color: black;
   cursor: pointer;
   font-family: var(--header-font);
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 .section_about_header div:nth-child(-n + 2):hover {
@@ -166,5 +166,19 @@ export default {
 
 .moveRight {
   transform: translateX(0%);
+}
+
+.block-top {
+  height: 10%;
+}
+
+@media (max-width: 750px) {
+  .block-top {
+    height: 60px;
+  }
+
+  .section_about {
+    height: 500px;
+  }
 }
 </style>
