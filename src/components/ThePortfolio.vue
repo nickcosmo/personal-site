@@ -75,7 +75,6 @@ export default {
 .portfolio {
   overflow: scroll;
   margin-bottom: 40px;
-  margin-top: 10px;
 }
 
 .portfolio::-webkit-scrollbar {
@@ -103,6 +102,7 @@ p {
 }
 
 img {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   width: 80%;
   height: auto;
 }

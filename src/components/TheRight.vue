@@ -82,14 +82,11 @@ export default {
 <style scoped>
 .container-songs {
   display: flex;
-  width: 100%;
-  height: 10%;
-  margin: 10px 0;
 }
 
 img {
-  height: 130px;
-  width: auto;
+  width: 60%;
+  height: auto;
   border-radius: 5px;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.16);
 }
@@ -115,7 +112,7 @@ p {
 .songData {
   height: calc(82% - 0.75px);
   overflow: scroll;
-  margin: 20px 10px 10px 10px;
+  padding: 20px 10px 10px 10px;
 }
 
 .songData div:not(:first-child) {
@@ -140,7 +137,6 @@ p {
 }
 
 .block-middle {
-  margin-bottom: 8px;
   height: 80%;
 }
 
@@ -149,7 +145,7 @@ p {
 }
 
 .block-bottom {
-  margin-top: 8px;
+  margin-top: 25px;
   height: 20%;
 }
 
@@ -166,8 +162,13 @@ p {
   }
 
   .block-bottom {
-    margin: 16px 0 0 0;
+    margin: 16px 0;
     height: 80px;
   }
+
+  /* .songData {
+    display: flex;
+    flex-direction: row;
+  } */
 }
 </style>

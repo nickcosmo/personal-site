@@ -26,13 +26,8 @@
         class="section_about_body"
         :class="{ moveLeft: left, moveRight: right }"
       >
-        <div
-          class="about"
-          style="text-align: left; border-right: 1px solid black"
-        >
-          <p
-            style="font-size: 2em; font-family: var(--body-font); padding: 25px"
-          >
+        <div class="about">
+          <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
             quo distinctio, quas accusamus modi labore aliquid laudantium soluta
             perspiciatis ipsum, necessitatibus eaque velit cumque quam corrupti
@@ -113,8 +108,20 @@ h3 {
   margin: 0;
 }
 
+.about {
+  text-align: left;
+  border-right: 1px solid black;
+}
+
+.about p {
+  font-size: 2em;
+  font-family: var(--body-font);
+  padding: 0 25px;
+  margin-top: 15px;
+}
+
 .section_about {
-  margin-top: 1rem;
+  margin-top: 25px;
   height: 90%;
 }
 

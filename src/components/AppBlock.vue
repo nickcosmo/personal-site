@@ -8,6 +8,7 @@
 <style scoped>
 .app-block {
   /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16); */
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 1);
   border: 1px solid black;
   background-color: #fefefe;
   /* border-radius: 10px; */

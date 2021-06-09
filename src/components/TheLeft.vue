@@ -2,11 +2,11 @@
   <div id="left">
     <app-block class="block-top">
       <div class="section">
-        <h1>Hi</h1>
+        <h1>HELLO</h1>
         <h2
           style="font-size: 3rem; margin: 0px; font-family: var(--header-font)"
         >
-          I'm Nick!
+          my name is Nick!
         </h2>
       </div>
     </app-block>
@@ -73,7 +73,7 @@ export default {
 <style scoped>
 h1 {
   line-height: 1;
-  font-size: 7.478rem;
+  font-size: 5.61rem;
   margin: 0px;
   font-family: var(--header-font);
 }
@@ -102,18 +102,13 @@ button:hover {
   box-shadow: 3px 5px 0 black;
 }
 
-h3 {
-  font-family: var(--header-font);
-  margin: 0px;
-  /* font-size: 1.777rem; */
-}
-
 .section {
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 0 10px;
 }
 
 .block-top {
@@ -121,7 +116,7 @@ h3 {
 }
 
 .block-middle {
-  margin: 16px 0px;
+  margin: 25px 0px;
   height: 10%;
 }
 

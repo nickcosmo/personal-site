@@ -47,12 +47,11 @@ body {
 #middle {
   display: flex;
   flex-direction: column;
-  padding: 5% 8px;
+  padding: 5% 25px;
 }
 
 #left {
   width: 30%;
-  justify-content: space-between;
 }
 
 #middle {
@@ -67,7 +66,7 @@ body {
   #right,
   #left,
   #middle {
-    padding: 1% 8px;
+    padding: 25px 13px;
   }
 }
 
