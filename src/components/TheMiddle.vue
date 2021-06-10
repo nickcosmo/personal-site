@@ -28,11 +28,10 @@
       >
         <div class="about">
           <p>
-            I am many things but most of all, I consider myself a full stack
-            JavaScript developer. I am self taught although I have a background
-            in engineering. I have been self studying for about 2 years and am
-            continuing to find myself getting excited to learn about new
-            technology.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+            tenetur nesciunt. Eveniet corrupti, rem ullam cumque quis aliquid
+            autem corporis libero quas quo sit quod animi! Libero quasi aut
+            provident!
           </p>
         </div>
         <ThePortfolio />
