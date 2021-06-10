@@ -28,10 +28,11 @@
       >
         <div class="about">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-            quo distinctio, quas accusamus modi labore aliquid laudantium soluta
-            perspiciatis ipsum, necessitatibus eaque velit cumque quam corrupti
-            impedit, aliquam quibusdam inventore!
+            I am many things but most of all, I consider myself a full stack
+            JavaScript developer. I am self taught although I have a background
+            in engineering. I have been self studying for about 2 years and am
+            continuing to find myself getting excited to learn about new
+            technology.
           </p>
         </div>
         <ThePortfolio />
