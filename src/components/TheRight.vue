@@ -52,7 +52,7 @@ export default {
   methods: {
     async getWeather(lat, long) {
       const weatherResponse = await fetch(
-        `http://api.openweathermap.org/data/2.5/weather?units=imperial&lat=${lat}&lon=${long}&appid=${process.env.VUE_APP_OWM_KEY}`
+        `https://api.openweathermap.org/data/2.5/weather?units=imperial&lat=${lat}&lon=${long}&appid=${process.env.VUE_APP_OWM_KEY}`
       );
       const weatherJson = await weatherResponse.json();
       this.temperature = Math.floor(weatherJson.main.temp);
@@ -61,7 +61,7 @@ export default {
   },
   async created() {
     const lastFMData = await fetch(
-      `http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=nickcosmo&api_key=${process.env.VUE_APP_LASTFM_KEY}&format=json&limit=3`
+      `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=nickcosmo&api_key=${process.env.VUE_APP_LASTFM_KEY}&format=json&limit=3`
     );
     const lastFMJson = await lastFMData.json();
     this.songData = lastFMJson.recenttracks.track;
