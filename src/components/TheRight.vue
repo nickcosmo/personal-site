@@ -66,10 +66,7 @@ export default {
     const lastFMJson = await lastFMData.json();
     this.songData = lastFMJson.recenttracks.track;
 
-    console.log(lastFMJson);
-
     let long, lat;
-
     navigator.geolocation.getCurrentPosition((position) => {
       lat = position.coords.latitude;
       long = position.coords.longitude;
