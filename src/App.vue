@@ -62,7 +62,7 @@ body {
   #right,
   #left,
   #middle {
-    padding: 25px 13px;
+    padding: 25px 0;
   }
 }
 
