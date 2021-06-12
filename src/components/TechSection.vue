@@ -1,7 +1,7 @@
 <template>
   <div class="section">
-    <h3>This Is The Tech I Love</h3>
-    <div class="divider"></div>
+    <h3>The Tech I Love</h3>
+    <AppDivider />
     <div class="devIcons">
       <svg class="devIcon" viewBox="0 0 128 128">
         <path
@@ -193,8 +193,8 @@
         ></path>
       </svg>
     </div>
-    <h3>I Am Currently Learning</h3>
-    <div class="divider"></div>
+    <h3>What I Am Learning</h3>
+    <AppDivider />
     <div class="devIcons">
       <svg class="devIcon" viewBox="0 0 128 128">
         <g id="original">

@@ -4,11 +4,11 @@
       <TechSection />
     </app-block>
     <app-block class="block-middle">
-      <div class="container-songs">
+      <div class="container-songs-header">
         <h3>The last few songs I listened to on Spotify</h3>
       </div>
-      <div class="divider"></div>
-      <div class="songData" v-if="songData">
+      <AppDivider />
+      <div class="container-songs-body" v-if="songData">
         <div v-for="song in songData" :key="song.mbid">
           <div>
             <a :href="song.url" target="_blank" rel="noopener noreferrer">
@@ -22,26 +22,26 @@
           <p>
             {{ song.artist["#text"] }}
           </p>
+          <!-- <AppDivider /> -->
         </div>
       </div>
     </app-block>
     <app-block class="block-bottom">
       <div class="section-weather">
-        <p>
+        <h3>
           You probably already knew this but it is {{ temperature }}&deg;F in
           {{ location }} right now.
-        </p>
+        </h3>
       </div>
     </app-block>
   </div>
 </template>
 
 <script>
-import AppBlock from "./AppBlock";
 import TechSection from "./TechSection";
 
 export default {
-  components: { AppBlock, TechSection },
+  components: { TechSection },
   data() {
     return {
       songData: null,
@@ -77,14 +77,15 @@ export default {
 </script>
 
 <style scoped>
-.container-songs {
+.container-songs-header {
   display: flex;
+  padding: 10px 15px 0 15px;
 }
 
 img {
   width: 60%;
   height: auto;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.16);
 }
 
@@ -100,41 +101,39 @@ p {
   font-size: 1rem;
 }
 
-.songData p {
+.container-songs-body p {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-.songData {
-  height: calc(82% - 0.75px);
+.container-songs-body {
+  height: 100%;
   overflow: scroll;
-  padding: 20px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
 }
 
-.songData div:not(:first-child) {
+.container-songs-body div:not(:first-child) {
   margin-top: 20px;
 }
 
-.songData::-webkit-scrollbar {
+.container-songs-body::-webkit-scrollbar {
   width: 5px;
 }
 
-.songData::-webkit-scrollbar-thumb {
+.container-songs-body::-webkit-scrollbar-thumb {
   background: rgb(12, 12, 12);
   border-radius: 10px;
   border: 1px solid #fefefe;
 }
 
 .section-weather {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 100%;
+  padding: 10px;
 }
 
 .block-middle {
   height: 80%;
+  padding-bottom: 80px;
 }
 
 .block-top {
@@ -142,30 +141,33 @@ p {
 }
 
 .block-bottom {
-  margin-top: 25px;
+  margin-top: var(--block-margin);
   height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 750px) {
   .block-middle {
-    margin: 16px 0 0 0;
-    height: 400px;
+    margin-top: var(--block-margin);
+    height: 250px;
   }
 
   .block-top {
-    margin: 16px 0 0 0;
-    display: inline;
-    height: 300px;
+    display: flex;
+    justify-content: center;
+    height: 285px;
+    margin-top: var(--block-margin);
   }
 
   .block-bottom {
-    margin: 16px 0;
-    height: 80px;
+    height: 100px;
+    margin-top: var(--block-margin);
   }
 
-  /* .songData {
-    display: flex;
-    flex-direction: row;
-  } */
+  img {
+    width: 40%;
+  }
 }
 </style>

@@ -3,11 +3,7 @@
     <app-block class="block-top">
       <div class="section">
         <h1>HELLO</h1>
-        <h2
-          style="font-size: 3rem; margin: 0px; font-family: var(--header-font)"
-        >
-          my name is Nick!
-        </h2>
+        <h2>my name is Nick!</h2>
       </div>
     </app-block>
     <app-block class="block-middle">
@@ -58,10 +54,9 @@
 
 <script>
 import TechSection from "./TechSection.vue";
-import AppBlock from "./AppBlock";
 
 export default {
-  components: { AppBlock, TechSection },
+  components: { TechSection },
   methods: {
     openEmail() {
       window.location.href = "mailto:nicklans92@gmail.com";
@@ -74,6 +69,12 @@ export default {
 h1 {
   line-height: 1;
   font-size: 5.61rem;
+  margin: 0px;
+  font-family: var(--header-font);
+}
+
+h2 {
+  font-size: 3rem;
   margin: 0px;
   font-family: var(--header-font);
 }
@@ -116,7 +117,7 @@ button:hover {
 }
 
 .block-middle {
-  margin: 25px 0px;
+  margin: var(--block-margin) 0px;
   height: 10%;
 }
 
@@ -135,6 +136,14 @@ button:hover {
 
   .block-middle {
     height: 60px;
+  }
+
+  h1 {
+    font-size: 4.75rem;
+  }
+
+  h2 {
+    font-size: 2.75rem;
   }
 }
 </style>

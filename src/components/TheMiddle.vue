@@ -7,8 +7,8 @@
         </h3>
       </div>
     </app-block>
-    <app-block class="section_about">
-      <header class="section_about_header">
+    <app-block class="block-bottom">
+      <header class="block-bottom_header">
         <div
           @click="moveSection('about')"
           :class="{ active: activePage === 'about' }"
@@ -23,10 +23,10 @@
         </div>
       </header>
       <div
-        class="section_about_body"
+        class="block-bottom_body"
         :class="{ moveLeft: left, moveRight: right }"
       >
-        <div class="about">
+        <div class="about-section">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
             tenetur nesciunt. Eveniet corrupti, rem ullam cumque quis aliquid
@@ -41,11 +41,10 @@
 </template>
 
 <script>
-import AppBlock from "./AppBlock";
 import ThePortfolio from "./ThePortfolio";
 
 export default {
-  components: { AppBlock, ThePortfolio },
+  components: { ThePortfolio },
   data() {
     return {
       activePage: "about",
@@ -94,10 +93,10 @@ export default {
 <style scoped>
 .container-top {
   display: flex;
-  width: 100%;
   height: 100%;
   align-items: center;
   justify-content: center;
+  padding: 0 10px;
 }
 
 h3 {
@@ -108,28 +107,28 @@ h3 {
   margin: 0;
 }
 
-.about {
+.about-section {
   text-align: left;
   border-right: 1px solid black;
 }
 
-.about p {
-  font-size: 2em;
+.about-section p {
+  font-size: 2rem;
   font-family: var(--body-font);
-  padding: 0 25px;
+  padding: 0 15px;
   margin-top: 15px;
 }
 
-.section_about {
-  margin-top: 25px;
+.block-bottom {
+  margin-top: var(--block-margin);
   height: 90%;
 }
 
-.section_about_header {
+.block-bottom_header {
   display: flex;
 }
 
-.section_about_header div:nth-child(-n + 2) {
+.block-bottom_header div:nth-child(-n + 2) {
   width: 50%;
   border-style: solid;
   border-color: black;
@@ -138,27 +137,27 @@ h3 {
   font-size: 2rem;
 }
 
-.section_about_header div:nth-child(-n + 2):hover {
+.block-bottom_header div:nth-child(-n + 2):hover {
   background-color: black;
   color: white;
 }
 
-.section_about_header div:nth-child(1) {
+.block-bottom_header div:nth-child(1) {
   border-width: 0px 0px 1px 0px;
 }
 
-.section_about_header div:nth-child(2) {
+.block-bottom_header div:nth-child(2) {
   border-width: 0px 0px 1px 1px;
 }
 
-.section_about_body {
+.block-bottom_body {
   display: flex;
   flex-direction: row;
   transition: all 1s ease;
   height: 100%;
 }
 
-.section_about_body div:nth-child(-n + 2) {
+.block-bottom_body div:nth-child(-n + 2) {
   flex: 0 0 100%;
 }
 
@@ -184,8 +183,20 @@ h3 {
     height: 60px;
   }
 
-  .section_about {
+  .block-top h3 {
+    font-size: 1.75rem;
+  }
+
+  .block-bottom {
     height: 500px;
+  }
+
+  .block-bottom_header div:nth-child(-n + 2) {
+    font-size: 1.75rem;
+  }
+
+  .about-section p {
+    font-size: 1.5rem;
   }
 }
 </style>

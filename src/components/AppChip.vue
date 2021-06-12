@@ -13,6 +13,14 @@ div {
   background-color: rgb(255, 255, 255);
   font-family: var(--header-font);
   font-size: 0.8rem;
-  margin: 0 5px;
+  margin: 2.5px 5px;
 }
+
+/* div:first-child {
+  margin: 2.5px 5px 2.5px 0;
+}
+
+div:not(:first-child) {
+  margin: 2.5px 5px;
+} */
 </style>

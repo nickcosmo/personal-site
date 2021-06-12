@@ -1,63 +1,119 @@
 <template>
   <div class="portfolio">
     <div class="project">
-      <h4>P.0001 Pomo-app</h4>
+      <h3>P.1 Chat-App</h3>
       <img src="../../public/pomo.jpg" alt="pomo-app.com" />
       <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad totam alias
-        nam debitis delectus! Perferendis labore ea possimus laboriosam eum
-        laborum magnam, enim repellendus accusamus molestias. Quaerat nesciunt
-        cupiditate iusto!
+        A real time chat application utilizing web sockets with Socket.io. Users
+        can user third party auth with Google or Github to create an account.
+        Each user has the ability to create a new channel and all channels are
+        accessible with the search functionality.
       </p>
-      <a href="https://pomo-app.com" target="_blank" rel="noopener noreferrer">
-        <p>https://pomo-app.com</p>
-      </a>
+      <p>
+        URL:
+        <a
+          href="https://chat-app-7c403.web.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          https://chat-app-7c403.web.app
+        </a>
+      </p>
+      <p>
+        Github Repo:
+        <a
+          href="https://github.com/nickcosmo/chat-app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          https://github.com/nickcosmo/chat-app
+        </a>
+      </p>
       <div class="chipArea">
         <app-chip>JavaScript</app-chip>
         <app-chip>VueJS</app-chip>
+        <app-chip>Vuetify</app-chip>
         <app-chip>NodeJS</app-chip>
         <app-chip>Express</app-chip>
+        <app-chip>Socket.io</app-chip>
+        <app-chip>MongoDB</app-chip>
       </div>
     </div>
-    <div class="divider"></div>
+    <AppDivider />
     <div class="project">
-      <h4>P.0001 Pomo-app</h4>
+      <h3>P.2 My-Unsplash</h3>
       <img src="../../public/pomo.jpg" alt="pomo-app.com" />
       <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad totam alias
-        nam debitis delectus! Perferendis labore ea possimus laboriosam eum
-        laborum magnam, enim repellendus accusamus molestias. Quaerat nesciunt
-        cupiditate iusto!
+        An app similar to unsplash.com where you can upload an image and
+        download any images displayed. Some features include a drag and drop
+        file uploader and searching by image name.
       </p>
-      <a href="https://pomo-app.com" target="_blank" rel="noopener noreferrer">
-        <p>https://pomo-app.com</p>
-      </a>
+      <p>
+        URL:
+        <a
+          href="https://pomo-app.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Coming Soon...
+        </a>
+      </p>
+      <p>
+        Github Repo:
+        <a
+          href="https://github.com/nickcosmo/my-unsplash"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          https://github.com/nickcosmo/my-unsplash
+        </a>
+      </p>
       <div class="chipArea">
         <app-chip>JavaScript</app-chip>
         <app-chip>VueJS</app-chip>
         <app-chip>NodeJS</app-chip>
         <app-chip>Express</app-chip>
+        <app-chip>CSS</app-chip>
         <app-chip>Mongo DB</app-chip>
       </div>
     </div>
-    <div class="divider"></div>
+    <AppDivider />
     <div class="project">
-      <h4>P.0001 Pomo-app</h4>
+      <h3>P.3 Pomo-app</h3>
       <img src="../../public/pomo.jpg" alt="pomo-app.com" />
       <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad totam alias
-        nam debitis delectus! Perferendis labore ea possimus laboriosam eum
-        laborum magnam, enim repellendus accusamus molestias. Quaerat nesciunt
-        cupiditate iusto!
+        My first full stack app I created! Quite cliche, but this is a pomodoro
+        timer allowing users to follows the pomoodoro technique while studying
+        or completing tasks. Features include customizable settings, user
+        account creation, and weekly progress tracking.
       </p>
-      <a href="https://pomo-app.com" target="_blank" rel="noopener noreferrer"
-        ><p>https://pomo-app.com</p></a
-      >
+      <p>
+        URL:
+        <a
+          href="https://pomo-app.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          https://pomo-app.com
+        </a>
+      </p>
+      <p>
+        Github Repo:
+        <a
+          href="https://github.com/nickcosmo/pomo-app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          https://github.com/nickcosmo/pomo-app
+        </a>
+      </p>
       <div class="chipArea">
         <app-chip>JavaScript</app-chip>
         <app-chip>VueJS</app-chip>
         <app-chip>NodeJS</app-chip>
         <app-chip>Express</app-chip>
+        <app-chip>MongoDB</app-chip>
+        <app-chip>CSS</app-chip>
       </div>
     </div>
   </div>
@@ -74,7 +130,7 @@ export default {
 <style scoped>
 .portfolio {
   overflow: scroll;
-  margin-bottom: 40px;
+  padding-bottom: 30px;
 }
 
 .portfolio::-webkit-scrollbar {
@@ -87,13 +143,13 @@ export default {
   border: 1px solid #fefefe;
 }
 
-h4,
+h3,
 p {
   text-align: left;
-  padding-left: 15px;
+  /* padding-left: 15px;  */
 }
 
-h4 {
+h3 {
   font-family: var(--header-font);
 }
 
@@ -103,12 +159,12 @@ p {
 
 img {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-  width: 80%;
+  width: 100%;
   height: auto;
 }
 
 .project {
-  padding: 10px 30px;
+  padding: 0 15px 10px 15px;
 }
 
 .chipArea {

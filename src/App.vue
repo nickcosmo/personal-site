@@ -22,17 +22,11 @@ export default {
 :root {
   --header-font: "Roboto Mono", monospace;
   --body-font: "Roboto", sans-serif;
+  --block-margin: 25px;
 }
 
 body {
   background-color: #faf9f6;
-}
-
-.divider {
-  display: inline-block;
-  width: 90%;
-  height: 0.75px;
-  background-color: black;
 }
 
 #main {
@@ -47,11 +41,12 @@ body {
 #middle {
   display: flex;
   flex-direction: column;
-  padding: 5% 25px;
+  padding: 5% 0;
 }
 
 #left {
   width: 30%;
+  margin-right: var(--block-margin);
 }
 
 #middle {
@@ -60,6 +55,7 @@ body {
 
 #right {
   width: 25%;
+  margin-left: var(--block-margin);
 }
 
 @media screen and (max-height: 750px) {
@@ -82,11 +78,16 @@ body {
   #middle {
     width: 90%;
     padding: 0;
+    margin: auto;
     /* max-height: 700px; */
   }
 
   #left {
-    margin-top: 15px;
+    margin-top: 25px;
+  }
+
+  #right {
+    margin-bottom: 25px;
   }
 }
 </style>
