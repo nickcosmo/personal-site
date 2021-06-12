@@ -9,7 +9,7 @@
         Each user has the ability to create a new channel and all channels are
         accessible with the search functionality.
       </p>
-      <p>
+      <p class="url">
         URL:
         <a
           href="https://chat-app-7c403.web.app/"
@@ -19,7 +19,7 @@
           https://chat-app-7c403.web.app
         </a>
       </p>
-      <p>
+      <p class="url">
         Github Repo:
         <a
           href="https://github.com/nickcosmo/chat-app"
@@ -48,7 +48,7 @@
         download any images displayed. Some features include a drag and drop
         file uploader and searching by image name.
       </p>
-      <p>
+      <p class="url">
         URL:
         <a
           href="https://pomo-app.com"
@@ -58,7 +58,7 @@
           Coming Soon...
         </a>
       </p>
-      <p>
+      <p class="url">
         Github Repo:
         <a
           href="https://github.com/nickcosmo/my-unsplash"
@@ -87,7 +87,7 @@
         or completing tasks. Features include customizable settings, user
         account creation, and weekly progress tracking.
       </p>
-      <p>
+      <p class="url">
         URL:
         <a
           href="https://pomo-app.com"
@@ -97,7 +97,7 @@
           https://pomo-app.com
         </a>
       </p>
-      <p>
+      <p class="url">
         Github Repo:
         <a
           href="https://github.com/nickcosmo/pomo-app"
@@ -155,6 +155,12 @@ h3 {
 
 p {
   font-family: var(--body-font);
+}
+
+.url {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 img {
