@@ -31,7 +31,7 @@ body {
 
 #main {
   display: flex;
-  max-width: 1150px;
+  max-width: 1350px;
   height: 100vh;
   margin: auto;
 }
@@ -45,16 +45,16 @@ body {
 }
 
 #left {
-  width: 30%;
+  width: 27%;
   margin-right: var(--block-margin);
 }
 
 #middle {
-  width: 45%;
+  width: 50%;
 }
 
 #right {
-  width: 25%;
+  width: 23%;
   margin-left: var(--block-margin);
 }
 

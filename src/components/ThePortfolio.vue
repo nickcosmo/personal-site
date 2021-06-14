@@ -2,12 +2,13 @@
   <div class="portfolio">
     <div class="project">
       <h3>P.1 Chat-App</h3>
-      <img src="../../public/pomo.jpg" alt="pomo-app.com" />
+      <img src="../../public/chat-app.jpg" alt="pomo-app.com" />
       <p>
         A real time chat application utilizing web sockets with Socket.io. Users
-        can user third party auth with Google or Github to create an account.
-        Each user has the ability to create a new channel and all channels are
-        accessible with the search functionality.
+        can choose to use third party auth with Google or Github to create an
+        account or use standard auth with JWT. Each user has the ability to
+        create a new channel and all channels are accessible with the search
+        functionality.
       </p>
       <p class="url">
         URL:
@@ -42,22 +43,13 @@
     <AppDivider />
     <div class="project">
       <h3>P.2 My-Unsplash</h3>
-      <img src="../../public/pomo.jpg" alt="pomo-app.com" />
+      <img src="../../public/my-unsplash.jpg" alt="pomo-app.com" />
       <p>
         An app similar to unsplash.com where you can upload an image and
         download any images displayed. Some features include a drag and drop
         file uploader and searching by image name.
       </p>
-      <p class="url">
-        URL:
-        <a
-          href="https://pomo-app.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Coming Soon...
-        </a>
-      </p>
+      <p class="url">URL: Coming Soon...</p>
       <p class="url">
         Github Repo:
         <a
@@ -75,6 +67,7 @@
         <app-chip>Express</app-chip>
         <app-chip>CSS</app-chip>
         <app-chip>Mongo DB</app-chip>
+        <app-chip>Webpack</app-chip>
       </div>
     </div>
     <AppDivider />

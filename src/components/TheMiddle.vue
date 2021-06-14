@@ -28,10 +28,13 @@
       >
         <div class="about-section">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
-            tenetur nesciunt. Eveniet corrupti, rem ullam cumque quis aliquid
-            autem corporis libero quas quo sit quod animi! Libero quasi aut
-            provident!
+            I am a lot of things, but most of all I consider myself a web
+            developer. I am self taught and my primary focus has been on
+            Javascript, Vuejs, and Nodejs. After 2 years of studying, I found a
+            creative outlet with programming and I continue to find myself
+            captivated by this vast universe of web dev. When I am not coding you
+            will probably find me Snowboarding or continuing my search for the
+            best IPA.
           </p>
         </div>
         <ThePortfolio />
@@ -110,6 +113,8 @@ h3 {
 .about-section {
   text-align: left;
   border-right: 1px solid black;
+  overflow: scroll;
+  padding-bottom: 30px;
 }
 
 .about-section p {
@@ -117,6 +122,16 @@ h3 {
   font-family: var(--body-font);
   padding: 0 15px;
   margin-top: 15px;
+}
+
+.about-section::-webkit-scrollbar {
+  width: 5px;
+}
+
+.about-section::-webkit-scrollbar-thumb {
+  background: rgb(12, 12, 12);
+  border-radius: 10px;
+  border: 1px solid #fefefe;
 }
 
 .block-bottom {
