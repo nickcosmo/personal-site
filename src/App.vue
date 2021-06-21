@@ -58,6 +58,12 @@ body {
   margin-left: var(--block-margin);
 }
 
+.devIcon {
+  width: 40px;
+  height: 40px;
+  margin: 5px 10px;
+}
+
 @media screen and (max-height: 750px) {
   #right,
   #left,

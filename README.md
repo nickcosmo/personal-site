@@ -5,6 +5,7 @@ This is the repo for my portfolio site! See the live site [here](https://nickcos
 ### Tech
 
 -   Vuejs
+-   JavaScript
 -   CSS
 -   Netlify
 
