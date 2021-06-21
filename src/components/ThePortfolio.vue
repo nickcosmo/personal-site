@@ -76,7 +76,7 @@
       <img src="../../public/pomo.jpg" alt="pomo-app.com" />
       <p>
         My first full stack app I created! Quite cliche, but this is a pomodoro
-        timer allowing users to follows the pomoodoro technique while studying
+        timer allowing users to follow the pomodoro technique while studying
         or completing tasks. Features include customizable settings, user
         account creation, and weekly progress tracking.
       </p>
