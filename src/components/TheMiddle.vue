@@ -118,7 +118,7 @@ h3 {
 }
 
 .about-section p {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-family: var(--body-font);
   padding: 0 15px;
   margin-top: 15px;
