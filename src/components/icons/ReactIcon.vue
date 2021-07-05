@@ -2,7 +2,7 @@
   <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">
     <svg class="devIcon" viewBox="0 0 128 128">
       <title>React</title>
-      <g fill="#61DAFB">
+      <g fill="#181818">
         <circle cx="64" cy="47.5" r="9.3"></circle>
         <path
           fill="#181818"
