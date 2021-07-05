@@ -15,6 +15,7 @@
     <h3>What I Am Learning</h3>
     <AppDivider />
     <div class="devIcons">
+      <ReactIcon />
       <WebpackIcon />
       <SassIcon />
       <MySQLIcon />
@@ -31,6 +32,7 @@ import ExpressIcon from "./icons/ExpressIcon.vue";
 import NodeIcon from "./icons/NodeIcon.vue";
 import MongoIcon from "./icons/MongoIcon.vue";
 import FirebaseIcon from "./icons/FirebaseIcon.vue";
+import ReactIcon from "./icons/ReactIcon.vue";
 import WebpackIcon from "./icons/WebpackIcon.vue";
 import SassIcon from "./icons/SassIcon.vue";
 import MySQLIcon from "./icons/MySQLIcon.vue";
@@ -45,6 +47,7 @@ export default {
     NodeIcon,
     MongoIcon,
     FirebaseIcon,
+    ReactIcon,
     WebpackIcon,
     SassIcon,
     MySQLIcon,
