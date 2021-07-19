@@ -28,13 +28,11 @@
       >
         <div class="about-section">
           <p>
-            I am a lot of things, but most of all I consider myself a web
-            developer. I am self taught and my primary focus has been on
-            Javascript, Vuejs, and Nodejs. I found a
-            creative outlet with programming and I continue to find myself
-            captivated by this vast universe of web dev. When I am not coding you
-            will probably find me Snowboarding or continuing my search for the
-            best IPA.
+            I am a self taught web developer with core copetencies in full stack
+            JavaScript, including Vuejs and Nodejs. I found a creative outlet
+            with programming and I continue to find myself captivated by this
+            vast universe of web dev. When I am not coding you will probably
+            find me Snowboarding or continuing my search for the best IPA.
           </p>
         </div>
         <ThePortfolio />
