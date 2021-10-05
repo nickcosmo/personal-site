@@ -28,7 +28,7 @@
       >
         <div class="about-section">
           <p>
-            I am a self taught web developer with core copetencies in full stack
+            I am a self taught web developer with core competencies in full stack
             JavaScript, including Vuejs and Nodejs. I found a creative outlet
             with programming and I continue to find myself captivated by this
             vast universe of web dev. When I am not coding you will probably
