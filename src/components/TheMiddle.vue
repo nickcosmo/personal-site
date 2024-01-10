@@ -31,13 +31,10 @@
         <AppDivider />
         <p>
           As a self-taught web developer, I specialize in the
-          TypeScript/JavaScript ecosystem.
-          <br />
-          Programming serves as my creative outlet, and I derive satisfaction
-          from applying problem-solving skills to tackle complex issues.
-          <br />
-          Outside of coding, you'll likely find me skateboarding or on the quest
-          for the finest IPA.
+          TypeScript/JavaScript ecosystem. Programming serves as my creative
+          outlet, and I get enjoyment from applying problem-solving skills to
+          tackle complex issues. Outside of coding, you'll likely find me
+          skateboarding or on the quest for the finest IPA.
         </p>
       </div>
       <!-- <ThePortfolio /> -->
