@@ -30,14 +30,14 @@
         <h3>a little about me</h3>
         <AppDivider />
         <p>
-          I am a self taught web developer with core competencies in the
-          Typescript/Javascript ecosystem.
+          As a self-taught web developer, I specialize in the
+          TypeScript/JavaScript ecosystem.
           <br />
-          Through programming, I have found a creative outlet and I enjoy using
-          creative problem solving to solve complex problems.
+          Programming serves as my creative outlet, and I derive satisfaction
+          from applying problem-solving skills to tackle complex issues.
           <br />
-          When I am not coding you will probably find me riding my skateboarding
-          or continuing my search for the best IPA.
+          Outside of coding, you'll likely find me skateboarding or on the quest
+          for the finest IPA.
         </p>
       </div>
       <!-- <ThePortfolio /> -->
