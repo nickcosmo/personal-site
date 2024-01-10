@@ -34,6 +34,8 @@ body {
   max-width: 1350px;
   height: 100vh;
   margin: auto;
+  align-items: center;
+  justify-content: center;
 }
 
 #left,
@@ -42,6 +44,8 @@ body {
   display: flex;
   flex-direction: column;
   padding: 5% 0;
+  height: 100%;
+  max-height: 900px;
 }
 
 #left {
@@ -59,8 +63,8 @@ body {
 }
 
 .devIcon {
-  width: 40px;
-  height: 40px;
+  width: 65px;
+  height: 65px;
   margin: 5px 10px;
 }
 

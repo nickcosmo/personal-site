@@ -3,12 +3,12 @@
     <app-block class="block-top">
       <div class="container-top">
         <h3>
-          I am a <span class="description">{{ description }}</span>
+          i am a <span class="description">{{ description }}</span>
         </h3>
       </div>
     </app-block>
     <app-block class="block-bottom">
-      <header class="block-bottom_header">
+      <!-- <header class="block-bottom_header">
         <div
           @click="moveSection('about')"
           :class="{ active: activePage === 'about' }"
@@ -21,31 +21,36 @@
         >
           Portfolio
         </div>
-      </header>
-      <div
+      </header> -->
+      <!-- <div
         class="block-bottom_body"
         :class="{ moveLeft: left, moveRight: right }"
-      >
-        <div class="about-section">
-          <p>
-            I am a self taught web developer with core competencies in full stack
-            JavaScript, including Vuejs and Nodejs. I found a creative outlet
-            with programming and I continue to find myself captivated by this
-            vast universe of web dev. When I am not coding you will probably
-            find me Snowboarding or continuing my search for the best IPA.
-          </p>
-        </div>
-        <ThePortfolio />
+      > -->
+      <div class="about-section">
+        <h3>a little about me</h3>
+        <AppDivider />
+        <p>
+          I am a self taught web developer with core competencies in the
+          Typescript/Javascript ecosystem.
+          <br />
+          Through programming, I have found a creative outlet and I enjoy using
+          creative problem solving to solve complex problems.
+          <br />
+          When I am not coding you will probably find me riding my skateboarding
+          or continuing my search for the best IPA.
+        </p>
       </div>
+      <!-- <ThePortfolio /> -->
+      <!-- </div> -->
     </app-block>
   </div>
 </template>
 
 <script>
-import ThePortfolio from "./ThePortfolio";
+// import ThePortfolio from "./ThePortfolio";
 
 export default {
-  components: { ThePortfolio },
+  // components: { ThePortfolio },
   data() {
     return {
       activePage: "about",
@@ -100,7 +105,7 @@ export default {
   padding: 0 10px;
 }
 
-h3 {
+.container-top h3 {
   font-family: var(--header-font);
   font-size: 2rem;
   vertical-align: middle;
@@ -109,17 +114,24 @@ h3 {
 }
 
 .about-section {
-  text-align: left;
-  border-right: 1px solid black;
   overflow: scroll;
-  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about-section p {
   font-size: 2.5rem;
   font-family: var(--body-font);
-  padding: 0 15px;
-  margin-top: 15px;
+  text-align: left;
+  padding: 0 20px;
+}
+
+.about-section h3 {
+  font-family: var(--header-font);
+  font-size: 1.3rem;
+  line-height: 1;
+  margin: 10px 0;
 }
 
 .about-section::-webkit-scrollbar {
@@ -179,13 +191,13 @@ h3 {
   color: white;
 }
 
-.moveLeft {
-  transform: translateX(-100.3%);
+/* .moveLeft { */
+/* transform: translateX(-100.3%);
 }
 
 .moveRight {
   transform: translateX(0%);
-}
+} */
 
 .block-top {
   height: 10%;

@@ -5,7 +5,7 @@
     </app-block>
     <app-block class="block-middle">
       <div class="container-songs-header">
-        <h3>The last few songs I listened to on Spotify</h3>
+        <h3>the last few songs i listened to on spotify</h3>
       </div>
       <AppDivider />
       <div class="container-songs-body" v-if="songData">
@@ -29,7 +29,7 @@
     <app-block class="block-bottom">
       <div class="section-weather">
         <h3>
-          You probably already knew this but it is {{ temperature }}&deg;F in
+          you probably already knew this but it is {{ temperature }}&deg;F in
           {{ location }} right now.
         </h3>
       </div>

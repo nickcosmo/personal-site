@@ -1,24 +1,17 @@
 <template>
   <div class="section">
-    <h3>The Tech I Love</h3>
+    <h3>the tech i love</h3>
     <AppDivider />
     <div class="devIcons">
-      <VueIcon />
+      <TSIcon />
       <NodeIcon />
-      <ExpressIcon />
-      <MongoIcon />
       <JSIcon />
-      <HTMLIcon />
-      <CSSIcon />
-      <FirebaseIcon />
-    </div>
-    <h3>What I Am Learning</h3>
-    <AppDivider />
-    <div class="devIcons">
-      <ReactIcon />
-      <WebpackIcon />
-      <SassIcon />
-      <MySQLIcon />
+      <NestJSIcon />
+      <ExpressIcon />
+      <PostgresIcon />
+      <VueIcon />
+      <GCPIcon />
+      <MongoIcon />
     </div>
   </div>
 </template>
@@ -26,31 +19,25 @@
 <script>
 import VueIcon from "./icons/VueIcon.vue";
 import JSIcon from "./icons/JSIcon.vue";
-import HTMLIcon from "./icons/HTMLIcon.vue";
-import CSSIcon from "./icons/CSSIcon.vue";
 import ExpressIcon from "./icons/ExpressIcon.vue";
 import NodeIcon from "./icons/NodeIcon.vue";
 import MongoIcon from "./icons/MongoIcon.vue";
-import FirebaseIcon from "./icons/FirebaseIcon.vue";
-import ReactIcon from "./icons/ReactIcon.vue";
-import WebpackIcon from "./icons/WebpackIcon.vue";
-import SassIcon from "./icons/SassIcon.vue";
-import MySQLIcon from "./icons/MySQLIcon.vue";
+import NestJSIcon from "./icons/NestJSIcon.vue";
+import PostgresIcon from "./icons/PostgresIcon.vue";
+import GCPIcon from "./icons/GCPIcon.vue";
+import TSIcon from "./icons/TSIcon.vue";
 
 export default {
   components: {
     VueIcon,
+    PostgresIcon,
     JSIcon,
-    HTMLIcon,
-    CSSIcon,
     ExpressIcon,
     NodeIcon,
     MongoIcon,
-    FirebaseIcon,
-    ReactIcon,
-    WebpackIcon,
-    SassIcon,
-    MySQLIcon,
+    TSIcon,
+    NestJSIcon,
+    GCPIcon,
   },
 };
 </script>

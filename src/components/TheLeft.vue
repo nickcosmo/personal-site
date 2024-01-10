@@ -16,13 +16,13 @@
               rel="noopener noreferrer"
             >
               <button>
-                <img src="../../public/linkedin.png" />
+                <LinkedInIcon class="icon" />
               </button>
             </a>
           </li>
           <li>
             <button @click="openEmail">
-              <img src="../../public/email.png" />
+              <EmailIcon class="icon" />
             </button>
           </li>
           <li>
@@ -31,7 +31,9 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button><img src="../../public/github.png" /></button>
+              <button>
+                <GithubIcon class="icon" />
+              </button>
             </a>
           </li>
           <li>
@@ -40,7 +42,9 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button><img src="../../public/codepen.png" /></button>
+              <button>
+                <CodepenIcon class="icon" />
+              </button>
             </a>
           </li>
         </ul>
@@ -54,9 +58,13 @@
 
 <script>
 import TechSection from "./TechSection.vue";
+import EmailIcon from "./icons/EmailIcon.vue";
+import GithubIcon from "./icons/GithubIcon.vue";
+import CodepenIcon from "./icons/CodepenIcon.vue";
+import LinkedInIcon from "./icons/LinkedInIcon.vue";
 
 export default {
-  components: { TechSection },
+  components: { TechSection, EmailIcon, GithubIcon, CodepenIcon, LinkedInIcon },
   methods: {
     openEmail() {
       window.location.href = "mailto:nicklans92@gmail.com";
@@ -123,6 +131,12 @@ button:hover {
 
 .block-bottom {
   height: 50%;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  margin: 4px;
 }
 
 @media (max-width: 750px) {
