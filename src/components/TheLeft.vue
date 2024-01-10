@@ -134,8 +134,8 @@ button:hover {
 }
 
 .icon {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   margin: 4px;
 }
 
@@ -158,6 +158,11 @@ button:hover {
 
   h2 {
     font-size: 2.75rem;
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
   }
 }
 </style>

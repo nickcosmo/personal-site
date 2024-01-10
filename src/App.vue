@@ -63,8 +63,8 @@ body {
 }
 
 .devIcon {
-  width: 65px;
-  height: 65px;
+  width: 63px;
+  height: 63px;
   margin: 5px 10px;
 }
 
@@ -98,6 +98,12 @@ body {
 
   #right {
     margin-bottom: 25px;
+  }
+
+  .devIcon {
+    width: 50px;
+    height: 50px;
+    margin: 5px 10px;
   }
 }
 </style>
